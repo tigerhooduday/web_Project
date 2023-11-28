@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(132deg, rgb(251, 165, 116) 0.00%, rgb(216, 245, 251) 100.00%);
+}
+.day{
+    height: 50px;
+    width :90px;
+    border-radius: 7px;
+    background: linear-gradient(132deg, rgb(221, 221, 221) 0.00%, rgb(110, 136, 161) 100.00%);
+    
+    font-style: normal;
+    font-size: 25px;
+    
+}
