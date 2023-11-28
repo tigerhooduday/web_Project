@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #eeeeee;
+}
+.wholebody{
+    background-color: #eeeeee;
+    height: 723px;
+    display: flex;
+}   
+.part1{
+    margin: 50px 25px 50px 50px;
+    color: #f50000;
+    background-image: url("page.jpg");
+    width: 425px;
+}  
+.part2{
+    margin: 50px 25px 50px 25px;
+    color: #f50000;
+    background-image: url("page.jpg");
+    width: 425px;
+}  
+.part3{
+    margin: 50px 50px 50px 25px;
+    color: #f50000;
+    background-image: url("page.jpg");
+    width: 425px;
+}
+.frame{
+    background: repeating-linear-gradient(#e6646400, #e6646400 24px, #000966 10px, #9198e5 25px);
+    height: 100%;
+    padding: 25px 25px 25px 25px;
+    
+}

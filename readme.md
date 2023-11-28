@@ -1,1 +1,1 @@
-This is a weekly development toolss
+This is a weekly development project
