@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Kings&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+
+.entireBody{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+
+}
+.card{
+
+
+    height: 200px;
+    background-color: rgb(21, 20, 20);
+    width: 350px;
+    /* border-color: rgb(255, 255, 255); */
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    margin: 60px 35px 20px 50px;
+    position:relative; 
+    overflow: hidden; 
+}
+.card:hover{
+
+
+     height: 230px;
+    background-color: rgba(245, 245, 245, 0.222);
+    width: 380px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    margin: 50px 20px 20px 35px;
+    position:relative; 
+    overflow: hidden;
+    box-shadow:.1em .2em .3em rgba(255, 255, 255, 0.687); 
+     
+     /* -----hover*/ 
+
+     /* height: 200px;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    /* border-color: rgb(255, 255, 255); */
+    /* border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    margin: 60px 35px 35px 50px;
+    position:relative; 
+    overflow: hidden; 
+    transition: all 0.3s ease-out; */
+    
+}
+
+
+.sidedesign{
+
+   height:128px;
+    width: 128px;
+    background-color: rgb(74, 166, 247);
+
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 50%;
+    transition: all  .9s ease;
+
+
+}
+.card:nth-child(2n) .sidedesign {
+    background-color: rgb(221, 221, 110);
+}
+.card:nth-child(3n) .sidedesign {
+    background-color: rgb(255, 130, 178);
+}
+.card:nth-child(4n) .sidedesign {
+    background-color: rgb(255, 0, 0);
+}
+
+.card:nth-child(5n) .sidedesign {
+    background-color: rgb(77, 53, 215);
+}
+.card:nth-child(6n) .sidedesign {
+    background-color: rgb(15, 141, 114)
+}
+
+
+
+/* by one css tragetting other css */
+.card:hover > .sidedesign { transform: scale(10);
+} 
+
+
+
+.textBox{
+    /* border-color: aqua;
+    border-style: solid; */
+    z-index: 2;
+    position: absolute;
+    padding: 0px 0px 0px 35px;
+    
+    
+
+    
+}
+.InText{
+    /* background-color: rgb(255, 255, 255); */
+    margin : 20px 50px 10px 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Grenze Gotisch', serif;
+    font-size: 37px;
+    
+}
+
+.headText{
+    height: 65px;
+    width: 800px;
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    margin:20px auto 0px ;
+    color: white;
+    padding-top: 20px;
+    font-family: 'Mea Culpa', cursive;
+    font-size: 44px;
+    box-shadow:.1em .2em .3em rgba(255, 255, 255, 0.687); 
+}
+
+.Day{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+
+    margin :70px 50px 10px 30px;
+    
+}
+
+.card:nth-child(1n) .Day_day {
+    color: rgb(74, 166, 247);
+
+}.card:nth-child(2n) .Day_day {
+    color: rgb(221, 221, 110);
+}
+.card:nth-child(3n) .Day_day {
+    color: rgb(255, 130, 178);
+}
+.card:nth-child(4n) .Day_day {
+    color: rgb(255, 0, 0);
+}
+
+.card:nth-child(5n) .Day_day {
+    color: rgb(77, 53, 215);
+}
+.card:nth-child(6n) .Day_day {
+    color: rgb(15, 141, 114)
+}
+/* Hover Effects */
+
+.card:hover:nth-child(1n) .Day_day {
+    color: rgb(255, 255, 255)
+}
+.card:hover:nth-child(2n) .Day_day {
+    color: rgb(255, 255, 255)
+}
+.card:hover:nth-child(3n) .Day_day {
+    color: rgb(255, 255, 255)
+}
+.card:hover:nth-child(4n) .Day_day {
+    color: rgb(255, 255, 255)
+}
+.card:hover:nth-child(5n) .Day_day {
+    color: rgb(255, 255, 255)
+}
+.card:hover:nth-child(6n) .Day_day {
+    color: rgb(255, 255, 255)
+}
+
+
+
+
