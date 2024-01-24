@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Example</title>
+    <style>
+        /* Style for the dialog */
+        dialog {
+            width: 400px;
+            padding: 10px;
+
+            border: 0px solid #1c1010;
+
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        /* Style for the button to open the dialog */
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form {
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Button to open the dialog -->
+<p>It appears there might be a typo in your question. There is no &lt;dilog&gt; tag in HTML. However, you might be referring to the &lt;dialog&gt; tag.</p>
+
+<p>The &lt;dialog&gt; tag is an HTML5 element used to create a dialog box or modal window. It provides a way to interact with users in a focused and contextually relevant manner. The content within the &lt;dialog&gt; tag is typically hidden, and it becomes visible when the dialog is activated.</p>
+
+<p>Here is a brief overview of how the &lt;dialog&gt; tag works:</p>
+
+<ul>
+    <li><strong>Activation:</strong> To display the dialog, you can use JavaScript to call the <code>showModal()</code> method on the &lt;dialog&gt; element.</li>
+
+    <li><strong>Closing the Dialog:</strong> The dialog can be closed either by clicking a designated close button inside the dialog or by calling the <code>close()</code> method in JavaScript.</li>
+
+    <li><strong>Styling:</strong> You can style the dialog using CSS, providing it with a specific appearance that fits the design of your website.</li>
+</ul>
+
+<button onclick="openDialog()">Open Dialog</button>
+
+<!-- The dialog itself -->
+<dialog id="myDialog">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required>
+    
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+    
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <button onclick="closeDialog()">Close</button>
+</dialog>
+
+<p>
+    Digio is a fast growing, funded, profitable product startup based in Bangalore founded in 2016 by
+ex-Flipkart, Twitter folks, playing a key role in India’s Digital story.
+The company is building software platforms and products to power business processes, to go paperless
+and digital in order to bring down cost overheads, time involved in erstwhile offline business processes,
+thereby being instrumental in increasing operational efficacy and human productivity along with
+enabling presence-less digital reach and super rich end user experience.
+Existing Digio platform can be used for end to end journeys including Digital Documentation ( eg -
+Agreements, Dynamic Forms, eStamping etc), Digital onboarding with eKYC (eg - Video KYC,
+DigiLocker, ID card OCR with Verification APIs, Face Match etc.) and eNACH and UPI for recurring
+payments.
+Digio provides APIs and SDKs to enable any web or mobile based product to opt Digital journeys built
+over IndiaStack and Deep Tech (AI/ML). Digio is the market leader in India for Digital onboarding and
+has played a key role so far in enabling Digital Transformation in India by empowering a large part of
+the Indian eco-system specifically Fintech sector of India
+</p>
+
+<script>
+    // Function to open the dialog
+    function openDialog() {
+        var dialog = document.getElementById('myDialog');
+        dialog.showModal();
+    }
+
+    // Function to close the dialog
+    function closeDialog() {
+        var dialog = document.getElementById('myDialog');
+        dialog.close();
+    }
+</script>
+
+</body>
+</html>
