@@ -10,3 +10,7 @@ function function3()
 {
     window.location.href= "day3/ambientcubeeffect.html"
 }
+function function4()
+{
+    window.location.href= "day4/index.html"
+}
